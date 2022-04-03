@@ -22,6 +22,27 @@ https://github.com/drums1706/time-management-system.git
 
 3. Compile the cpp files and upload them to your IoTkit.
 
+### Power Apps / Automate
+
+1. Add a condition to receive body from iotkit.  
+![Image of flow](./assets/body_condition.png/)
+
+2. Create a form by using this: 
+[Tutorial](https://www.youtube.com/watch?v=b9S-hvlG7AU)
+
+3. Call your Microsoft Flow from your application by following this: 
+[Call Flow from your application](https://powerautomate.microsoft.com/en-us/blog/call-flow-restapi/)
+
+4. Add a row in Dataverse, by following this Website: 
+[Add row to Dataverse](https://docs.microsoft.com/en-us/power-automate/dataverse/create)
+
+In the end it should look something like this:  
+Datarow:   
+![Image of Datarow](./assets/datarow.png)  
+
+Overview:   
+![Image of Overview](./assets/overview.png)
+
 ### Python relay deployment
 
 1. Connect to the linux machine / server.
@@ -38,7 +59,10 @@ https://github.com/drums1706/time-management-system.git
 pip3 install flask requests
 ```
 
-5. Run the relay script:
+5. Change the url to your Azure Cloud url.  
+![Image of python url](./assets/python_url.png)
+
+6. Run the relay script:
 
 Option A: Run it as long as your terminal is open:
 ```
@@ -53,30 +77,6 @@ This will start a separate session with the name `python-relay`.
 * To interact with the session, use `screen -r python-relay`
 * To exit from the sesison, use `CTRL` + `A` + `D` or `CTRL` + `C` to exit and kill
 
-
-### Power Apps / Automate
-
-1. Change the url to your Azure Cloud url.  
-![Image of python url](./assets/python_url.png)
-
-2. Add a condition to receive body from iotkit.  
-![Image of flow](./assets/body_condition.png/)
-
-3. Create a form by using this: 
-[Tutorial](https://www.youtube.com/watch?v=b9S-hvlG7AU)
-
-4. Call your Microsoft Flow from your application by following this: 
-[Call Flow from your application](https://powerautomate.microsoft.com/en-us/blog/call-flow-restapi/)
-
-5. Add a row in Dataverse, by following this Website: 
-[Add row to Dataverse](https://docs.microsoft.com/en-us/power-automate/dataverse/create)
-
-In the end it should look something like this:  
-Datarow:   
-![Image of Datarow](./assets/datarow.png)  
-
-Overview:   
-![Image of Overview](./assets/overview.png)
 
 ## Documentation
 
