@@ -99,3 +99,12 @@ An RFID scanner is a contactless Datatransporter between a RFID-Transponder and 
 
 #### iotkitv3:  
 An iotkitv3 is an open-source electronics platform based on easy-to-use hardware and software.
+
+#### Power Apps:  
+Power Apps is a suite of apps, services, and connectors, as well as a data platform, that provides a rapid development environment to build custom apps for your business needs.
+
+#### Power Automate:  
+Power Automate, formerly Microsoft Flow, is an online tool within the Microsoft 365 applications and add-ins, used for the creation of automated workflows between apps and services to synchronize files, get notifications, and collect data.
+
+#### Cloud Services:  
+The term "cloud services" refers to a wide range of services delivered on demand to companies and customers over the internet. These services are designed to provide easy, affordable access to applications and resources, without the need for internal infrastructure or hardware.
