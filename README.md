@@ -1,6 +1,6 @@
 # Time Management System
 
-A short description about the project and/or client.
+An employee signs in or out and the program creates a new record on the CRM (Dynamics 365) which contains the data from the card. The data is summarized in a working day and additionally assigned to an employee. All these processes are controlled in the background via several flows so that everything works automatically. Each day a new workday is created for the employees and the day is also created as soon as a new employee logs in for the first time.
 
 ## Getting Started
 
@@ -56,11 +56,33 @@ This will start a separate session with the name `python-relay`.
 
 ### Power Apps / Automate
 
+1. Change the url to your Azure Cloud url.  
+![Image of python url](./assets/python_url.png)
+
+2. Add a condition to receive body from iotkit.  
+![Image of flow](./assets/body_condition.png/)
+
+3. Create a form by using this: 
+[Tutorial](https://www.youtube.com/watch?v=b9S-hvlG7AU)
+
+4. Call your Microsoft Flow from your application by following this: 
+[Call Flow from your application](https://powerautomate.microsoft.com/en-us/blog/call-flow-restapi/)
+
+5. Add a row in Dataverse, by following this Website: 
+[Add row to Dataverse](https://docs.microsoft.com/en-us/power-automate/dataverse/create)
+
+In the end it should look something like this:  
+Datarow:   
+![Image of Datarow](./assets/datarow.png)  
+
+Overview:   
+![Image of Overview](./assets/overview.png)
+
 ## Documentation
 
 ### Reflection
 
-The project was very interessting and we learned alot from this modul. We learned what an iotkit is an what its able to do. The most interessting and challenging part of the whole project was, that we had to do a Https post request to a server. But the most fun part to do was to implement the RFID reader. Many challenges stood before us, but we managed to conqueror them.
+The project was very interessting and we learned alot from this modul. We learned what an iotkit is an what its able to do. The most interessting and challenging part of the whole project was, that we had to do a Https post request to a server. But the most fun part to do was to implement the RFID reader. Many challenges stood before us, but we managed to conqueror them. The Learning experience was exponential for us, because we didn't know anything when we started this modul. But as time passed, we got to learn so many different things and many possibilitys to do with the iotkit. 
 
 ### Use HTTPS
 
@@ -70,6 +92,10 @@ We wanted to make a Https POST request to our Azure server but quickly realized,
 
 We used Azure to store and visualize our data. But to host the python relay, we used a server (own cloud) from our friend Dillan.
 
-### Knowledgebase
+## Knowledgebase
 
-...
+#### RFID Scanner:  
+An RFID scanner is a contactless Datatransporter between a RFID-Transponder and a RFID-read/writer. The scanner uses electromagnetic or magnetic fields to transfer the data.
+
+#### iotkitv3:  
+An iotkitv3 is an open-source electronics platform based on easy-to-use hardware and software.
